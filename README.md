@@ -24,12 +24,10 @@ Cycle is played according to the following rules.
 * Player two moves using the I, K, J and L keys.
 * Each player's trail grows as they move.
 * Players try to maneuver so the opponent collides with their trail.
-** If a player collides with their opponent's trail...
-** A "game over" message is displayed in the middle of the screen.
-** The cycles turn white.
-** Players keep moving and turning but don't run into each other.
-Interface
-
+    - If a player collides with their opponent's trail...
+    - A "game over" message is displayed in the middle of the screen.
+    - The cycles turn white.
+    - Players keep moving and turning but don't run into each other.
 
 ## Requirements
 The program must also meet the following requirements.
@@ -40,6 +38,6 @@ The program must also meet the following requirements.
 * The program must remain true to game play described in the overview.
 * Have Some Fun
 * Have some fun by enhancing the game any way you like. A few ideas are as follows.
-** Enhanced scoring and game reset.
-** Enhanced game play and game over messages.
-** Enhanced game display, e.g. cycle and trails
+    - Enhanced scoring and game reset.
+    - Enhanced game play and game over messages.
+    - Enhanced game display, e.g. cycle and trails
