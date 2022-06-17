@@ -7,10 +7,10 @@
 > - Doug Bradbury -
 
 ## Team 4
-* Pierce Cirks
-* Anita Taylor
-* Andrew Vargas
-* Matthew Scoville
+* Pierce Cirks - handle_collisions
+* Anita Taylor - control_playerN_action
+* Andrew Vargas - Cycle class
+* Matthew Scoville - main n stuff
 
 
 ## Overview
