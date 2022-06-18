@@ -1,12 +1,13 @@
 from game.scripting.action import Action
 
-
-# TODO: Implement MoveActorsAction class here! 
 class MoveActorsAction(Action):
-# Override the execute(cast, script) method as follows:
+
     def execute(self, cast, script):
-        """Executes something that is important in the game. This method should be overriden by 
-        derived classes.
+        """ Overrides execute() of Action
+
+        Iterates through the cast of actors and
+        calls their move_next() method
+  
 
         Args:
             cast (Cast): The cast of Actors in the game.
