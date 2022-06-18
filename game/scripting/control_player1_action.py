@@ -3,18 +3,18 @@ from game.scripting.action import Action
 from game.shared.point import Point
 
 
-class ControlActorsAction(Action):
+class ControlPlayer1Action(Action):
     """
     An input action that controls the snake.
     
-    The responsibility of ControlActorsAction is to get the direction and move the snake's head.
+    The responsibility of ControlPlayer1Action is to get the direction and move the snake's head.
 
     Attributes:
         _keyboard_service (KeyboardService): An instance of KeyboardService.
     """
 
     def __init__(self, keyboard_service):
-        """Constructs a new ControlActorsAction using the specified KeyboardService.
+        """Constructs a new ControlPlayer1Action using the specified KeyboardService.
         
         Args:
             keyboard_service (KeyboardService): An instance of KeyboardService.
