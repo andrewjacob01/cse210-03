@@ -4,7 +4,8 @@ from game.casting.cast import Cast
 from game.casting.score import Score
 from game.casting.cycle import Cycle
 from game.scripting.script import Script
-from game.scripting.control_actors_action import ControlActorsAction
+from game.scripting.control_player1_action import ControlPlayer1Action
+from game.scripting.control_player2_action import ControlPlayer2Action
 from game.scripting.move_actors_action import MoveActorsAction
 from game.scripting.handle_collisions_action import HandleCollisionsAction
 from game.scripting.draw_actors_action import DrawActorsAction
