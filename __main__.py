@@ -22,8 +22,7 @@ def main():
     cast = Cast()
     cast.add_actor("player1", Cycle())
     cast.add_actor("player2", Cycle())    
-    cast.add_actor("scores", Score())
-   
+    
     # start the game
     keyboard_service = KeyboardService()
     video_service = VideoService()
