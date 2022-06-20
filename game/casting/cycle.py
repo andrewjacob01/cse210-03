@@ -3,14 +3,12 @@ from game.casting.actor import Actor
 from game.shared.point import Point
 
 
-class Snake(Actor):
+class Cycle(Actor):
     """
-    A long limbless reptile.
+    A two wheeled construct that leave a trail like a slug. Only faster.
     
-    The responsibility of Snake is to move itself.
+    The responsibility of Cycle is to move itself
 
-    Attributes:
-        _points (int): The number of points the food is worth.
     """
     def __init__(self):
         super().__init__()
@@ -30,6 +28,8 @@ class Snake(Actor):
             previous = self._segments[i - 1]
             velocity = previous.get_velocity()
             trailing.set_velocity(velocity)
+        
+        self.grow_tail(1)
 
     def get_head(self):
         return self._segments[0]
@@ -55,7 +55,7 @@ class Snake(Actor):
         x = int(constants.MAX_X / 2)
         y = int(constants.MAX_Y / 2)
 
-        for i in range(constants.SNAKE_LENGTH):
+        for i in range(constants.CYCLE_LENGTH):
             position = Point(x - i * constants.CELL_SIZE, y)
             velocity = Point(1 * constants.CELL_SIZE, 0)
             text = "8" if i == 0 else "#"

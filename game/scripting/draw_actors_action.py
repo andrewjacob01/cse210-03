@@ -30,11 +30,11 @@ class DrawActorsAction(Action):
         player1 = cast.get_first_actor("player1")
         player2 = cast.get_first_actor("player2")
         trail1 = player1.get_segments()
-        trail2 = player1.get_segments()
+        trail2 = player2.get_segments()
         messages = cast.get_actors("messages")
 
         self._video_service.clear_buffer()
-        self._video_service.draw_actor(trail1)
+        self._video_service.draw_actors(trail1)
         self._video_service.draw_actors(trail2)
         self._video_service.draw_actor(score)
         self._video_service.draw_actors(messages, True)
