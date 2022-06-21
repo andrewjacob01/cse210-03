@@ -42,11 +42,20 @@ class HandleCollisionsAction(Action):
         segments1 = player1.get_segments()[1:]
         segments2 = player2.get_segments()[1:]
         
-        for segment1 in segments1 and segments2:
+        #game over for player1
+        for segment1 in segments1:
             if cycle1.get_position().equals(segment1.get_position()):
                 self._is_game_over = True
 
-        for segment2 in segments2 and segments1:
+        for segment1 in segments2:
+            if cycle1.get_position().equals(segment1.get_position()):
+                self._is_game_over = True
+
+        #game over for player2
+        for segment2 in segments2:
+            if cycle2.get_position().equals(segment2.get_position()):
+                self._is_game_over = True
+        for segment2 in segments1:
             if cycle2.get_position().equals(segment2.get_position()):
                 self._is_game_over = True
         
