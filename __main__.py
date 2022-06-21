@@ -24,14 +24,14 @@ def main():
     # create the cast
     cast = Cast()
 
-    position = Point(x,y)
+    position = Point(x,constants.CELL_SIZE*10)
     velocity = Point(constants.CELL_SIZE*1,0)
     player1 = Cycle(position,velocity)
     player1.set_color(constants.RED)
     cast.add_actor("player1", player1)
     
-    position = Point(x,y+constants.CELL_SIZE)
-    velocity = Point(constants.CELL_SIZE*-1,0)
+    position = Point(x,constants.CELL_SIZE*30)
+    velocity = Point(-1 * constants.CELL_SIZE,0)
     player2 = Cycle(position,velocity)
     player2.set_color(constants.BLUE)
     cast.add_actor("player2", player2)
