@@ -18,10 +18,23 @@ from game.shared.point import Point
 
 def main():
     
+    y = int(constants.MAX_Y/2)
+    x = int(constants.MAX_X/2)
+
     # create the cast
     cast = Cast()
-    cast.add_actor("player1", Cycle())
-    cast.add_actor("player2", Cycle())    
+
+    position = Point(x,y)
+    velocity = Point(constants.CELL_SIZE*1,0)
+    player1 = Cycle(position,velocity)
+    player1.set_color(constants.RED)
+    cast.add_actor("player1", player1)
+    
+    position = Point(x,y+constants.CELL_SIZE)
+    velocity = Point(constants.CELL_SIZE*-1,0)
+    player2 = Cycle(position,velocity)
+    player2.set_color(constants.BLUE)
+    cast.add_actor("player2", player2)
     
     # start the game
     keyboard_service = KeyboardService()
