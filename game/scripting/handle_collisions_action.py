@@ -38,7 +38,7 @@ class HandleCollisionsAction(Action):
         player1 = cast.get_first_actor("player1")
         player2 = cast.get_first_actor("player2")
         cycle1 = player1.get_segments()[0]
-        cycle2 = player1.get_segments()[0]
+        cycle2 = player2.get_segments()[0]
         segments1 = player1.get_segments()[1:]
         segments2 = player2.get_segments()[1:]
         
